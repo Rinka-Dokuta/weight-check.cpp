@@ -1,0 +1,19 @@
+#include <iostream>
+
+void truck_weight_check(int load_weight) {
+    if (load_weight > 1200) {
+        std::cout << "Overweight!" << std::endl;
+    } else {
+        std::cout << "Within limit." << std::endl;
+    }
+}
+
+int main() {
+    // Example usage
+    int weight;
+    std::cout << "Enter the load weight in kg: ";
+    std::cin >> weight;
+
+    truck_weight_check(weight);
+    return 0;
+}
